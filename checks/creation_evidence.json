@@ -1,0 +1,164 @@
+{
+  "target": "https://q1232990-a-share-alpha-lab.hf.space",
+  "source_sha": "136807d1481ab1639de5318d9ffb5abe3a9c4074",
+  "job_id": "6df4a25ad23a403d8e8b421abf75caff-9fa4793645ac47bf813ccbd4b67d51af",
+  "state": "complete",
+  "phase": "collected",
+  "controls": [
+    {
+      "candidate_id": "control-scalar",
+      "state": "complete",
+      "run_id": "e3bb4e38f16f7d5e729597e857455dc746359d5c453931b51ceda81279a3c9cd",
+      "result_schema_version": "1",
+      "period": "Train"
+    },
+    {
+      "candidate_id": "control-ts",
+      "state": "complete",
+      "run_id": "f173b710c0d954c7ae12b15947b86005d8102bd807aa9520670e91048a398f66",
+      "result_schema_version": "1",
+      "period": "Train"
+    },
+    {
+      "candidate_id": "control-vector",
+      "state": "complete",
+      "run_id": "4cdf87a2f4bebfbc2754ca60b76318f41247265f79057ad43cb998f701546674",
+      "result_schema_version": "1",
+      "period": "Train"
+    }
+  ],
+  "downloads": {
+    "00-control-scalar.csv": {
+      "content_disposition": "attachment; filename=\"alpha-v1__neg-rank-open-gap__tr__ALL-SH-SZ-VALID__d0-none-d0-q5__re3bb4e38f16f__f0e9c342776f9.csv\"",
+      "sha256": "0e9c342776f9aef370b2c6e1e17da240281233114b33b3d2c9d74d5811a4c974",
+      "url": "/api/v1/jobs/6df4a25ad23a403d8e8b421abf75caff-9fa4793645ac47bf813ccbd4b67d51af/items/0/result?format=csv"
+    },
+    "01-control-ts.csv": {
+      "content_disposition": "attachment; filename=\"alpha-v1__rank-ts-mean-open-gap-5-0__tr__ALL-SH-SZ-VALID__d0-none-d0-q5__rf173b710c0d9__fa75a28b00a71.csv\"",
+      "sha256": "a75a28b00a71a7bf8a94d830e3ae5a06648262f40d2e0a49d722fee326cbf94c",
+      "url": "/api/v1/jobs/6df4a25ad23a403d8e8b421abf75caff-9fa4793645ac47bf813ccbd4b67d51af/items/1/result?format=csv"
+    },
+    "02-control-vector.csv": {
+      "content_disposition": "attachment; filename=\"alpha-v1__rank-vec-last-close-1m-vec-first__tr__ALL-SH-SZ-VALID__d0-none-d0-q5__r4cdf87a2f4be__fbe73a3201212.csv\"",
+      "sha256": "be73a32012124bca9bc3975aabdb2ad409b5b69b5672c5cdaf4145d3c400aedc",
+      "url": "/api/v1/jobs/6df4a25ad23a403d8e8b421abf75caff-9fa4793645ac47bf813ccbd4b67d51af/items/2/result?format=csv"
+    },
+    "batch.csv": {
+      "content_disposition": "attachment; filename=\"alpha-batch-v1__n3__j6df4a25ad23a__f39a77e04bfaa.csv\"",
+      "sha256": "39a77e04bfaaed794e7a7c12fe81b6acbc190c5067df39fcdee5a168f5d5a2c9",
+      "url": "/api/v1/jobs/6df4a25ad23a403d8e8b421abf75caff-9fa4793645ac47bf813ccbd4b67d51af/export.csv"
+    },
+    "guide.md": {
+      "content_disposition": "attachment; filename=\"alpha-download-guide-v1-94adceb50262.md\"",
+      "sha256": "94adceb50262dee2f422c6679f0406db3b6ce5a805cad661e73eceba907ef31b",
+      "url": "/api/v1/downloads/alpha-download-guide-v1-94adceb50262.md"
+    },
+    "summary.json": {
+      "sha256": "86215d4f697a846bba616fd2c96c0d4d6c7d05890df6737e1245d8f30fbb6fa9"
+    }
+  },
+  "resume": "GET-only known-job collection; subsequent collected record opened offline with checksum verification",
+  "purpose": "infrastructure verification, not alpha selection",
+  "date": "2026-10-17",
+  "supported_smoke": {
+    "PASS": 80,
+    "FAIL": 0,
+    "SKIP": 2
+  },
+  "browser_api_parity": {
+    "expression": "-rank(open_gap)",
+    "period": "Train + validation",
+    "run_id": "0f64be3446d67e5d12c2034694a088b8da632f1da506d4a7341c9acbee059190",
+    "browser_display": {
+      "net_sharpe": -3.4321,
+      "turnover": 1.5668,
+      "research_fitness": -0.1973,
+      "rank_ic": 0.0055,
+      "icir": 0.0339,
+      "win_pct": 52.1877,
+      "max_drawdown_pct": -273.4212,
+      "days": 3154
+    },
+    "matches_at_display_precision": {
+      "net_sharpe": true,
+      "turnover": true,
+      "research_fitness": true,
+      "rank_ic": true,
+      "icir": true,
+      "win_pct": true,
+      "max_drawdown_pct": true,
+      "days": true
+    }
+  },
+  "source_identity": {
+    "source_sha": "136807d1481ab1639de5318d9ffb5abe3a9c4074",
+    "runtime_sha": "136807d1481ab1639de5318d9ffb5abe3a9c4074",
+    "checked_files": [
+      {
+        "path": "app.py",
+        "sha256": "d8009f9bdf0943c45411d1e75c0ab05c5fb63cd37916b20cc62e972f7d18961b",
+        "matches_checkout": true
+      },
+      {
+        "path": "configs/base.yaml",
+        "sha256": "974c2222a057d4cfbae1b8d35a6d93d95e2f621a5f84d7cb8ddf87e5cda95590",
+        "matches_checkout": true
+      },
+      {
+        "path": "configs/data.yaml",
+        "sha256": "1cdad77d28e266e6bc9b9ff5e8c9d6f334fa584889250afe73b5678d4f85656a",
+        "matches_checkout": true
+      },
+      {
+        "path": "src/ashare_alpha/api/routes.py",
+        "sha256": "842f650fb2a03f7fee141652c348f5d6cb7d4f1e0ff6eb9d0d367a16c435cd29",
+        "matches_checkout": true
+      },
+      {
+        "path": "src/ashare_alpha/api/schemas.py",
+        "sha256": "a7f9f4a240c3e3085ed85775090b59552f0c9b5ccd5fa70355f1ee97d2110b73",
+        "matches_checkout": true
+      },
+      {
+        "path": "src/ashare_alpha/api/serialize.py",
+        "sha256": "34e289bbc987a2290c9b228dd4bd415ba6b642c374fe799af64f6bfbbf0ca650",
+        "matches_checkout": true
+      },
+      {
+        "path": "src/ashare_alpha/service/research.py",
+        "sha256": "ff0a192f5b7b1ff86d301e6dfece3433e72be568ddd7184fb64d6cd1576ac4dc",
+        "matches_checkout": true
+      },
+      {
+        "path": "src/ashare_alpha/service/jobs.py",
+        "sha256": "a94f2f91d2a39720b51b4351eb56c02ce76662e14cae1da2219e1d64d4ee9d5b",
+        "matches_checkout": true
+      },
+      {
+        "path": "src/ashare_alpha/evaluation/simulation.py",
+        "sha256": "a2e50f03e1659591d63f897c5135fe356e19c41ee39bb833d4ac540ab0224256",
+        "matches_checkout": true
+      },
+      {
+        "path": "src/ashare_alpha/evaluation/portfolio.py",
+        "sha256": "b66c78445f1c9f4905cad0d57ca44a09ee791e48c7ca413ecdb479532ccca4e5",
+        "matches_checkout": true
+      },
+      {
+        "path": "src/ashare_alpha/result_exports.py",
+        "sha256": "9399932da8ea28ef0134a98b6263ba72ca60401b2cd87ec4b1e1ad9ee35fea28",
+        "matches_checkout": true
+      },
+      {
+        "path": "src/ashare_alpha/web.py",
+        "sha256": "8250aadaf207b7f251babef01591ea747a35506d28e59361f3dc4edc68ab9355",
+        "matches_checkout": true
+      },
+      {
+        "path": "src/ashare_alpha/web_jobs.py",
+        "sha256": "053bcee2b8eb76c083e44bc7a2e60a366207add2fa760ea3040e1f7cd6c1e04a",
+        "matches_checkout": true
+      }
+    ]
+  }
+}

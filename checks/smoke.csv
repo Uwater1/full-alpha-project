@@ -1,0 +1,4 @@
+candidate_id,expression
+control-scalar,-rank(open_gap)
+control-ts,"rank(ts_mean(open_gap, 5))"
+control-vector,rank(vec_last(close_1m) / vec_first(open_1m) - 1)

@@ -1,0 +1,20 @@
+[study]
+purpose = "verification"
+hypothesis = "The deployed API executes documented scalar, TS and vector controls. No alpha claim."
+acceptance = "Three successful schema-1 results; summary/full report parity; exact CSV and guide bytes saved."
+prior_search = "These are published editor examples, not new/untouched candidates."
+candidate_budget = 3
+
+[defaults]
+period = "Train"
+
+[defaults.simulation_profile]
+version = "v1"
+region = "CHN"
+universe = "ALL_SH_SZ_VALID"
+information_profile = "d0_0945"
+neutralization = "none"
+decay_sessions = 0
+
+[defaults.simulation_profile.settings]
+quantiles = 5
